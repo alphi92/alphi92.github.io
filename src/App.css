@@ -1,0 +1,82 @@
+.App {
+  text-align: center;
+  
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width:100%;
+  height:100%;
+  text-align:center;
+  background-color:#d0eff3;
+  background-position:50% 0;
+  background-repeat:no-repeat;
+}
+
+.stronaGlowna h1, ul{
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background-color: rgb(181, 184, 216);
+  color:white;
+}
+
+.wyswietlanie a{
+  background-color: rgb(138, 143, 202);
+  font-size: 12px;
+  padding: 6px 12px;
+  border-radius: 12px;
+}
+
+.wyswietlanie table{
+  width: 100%;
+  height: 50%;
+  border-spacing: 50px;
+  background-color: rgb(181, 184, 216);
+}
+
+
+.domowaStrona p{
+  text-align: center;
+}
+.domowaStrona img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.dodaj{
+  background-color: rgb(181, 184, 216);
+}
+
+.dodaj input{
+  width:10%;
+  border: 2px solid red;
+  border-radius: 4px;
+  }
+
+.dodaj p{
+  margin-left: auto;
+}
+
+.dodaj button{
+  margin-left: auto;
+}
+
+table{
+  counter-reset: rowNumber -1;
+}
+  
+table tr{
+  counter-increment: rowNumber;
+}
+  
+table tr td:first-child::before {
+  content: counter(rowNumber);
+  min-width: 1em;
+  margin-right: 0.5em;
+}
+
