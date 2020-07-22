@@ -9,41 +9,54 @@ class Search extends Component{
     
 
     state = {
+        redirect : false,
         dane : JSON.parse(localStorage.getItem("KTReact")),
+        
         
     }
     
     searchContact = () => {
-       // nazwisko: document.querySelector("input[name='nazwisko']").value
+        let nazwisko2; 
+        nazwisko2 = document.querySelector("input[name='nazwisko']").value;
+        
+        let nazwisko3 = this.state.dane.map(nazw => nazw.nazwisko);
 
-      //  if(nazwisko == value.nazwisko){
-       //     return true;
-      //  }
+        var boolean = nazwisko3.includes(nazwisko2);
+       
+
+        if(boolean === true){
+            document.getElementById("found").innerHTML = "Znaleziono!";
+        }
+        else{
+            document.getElementById("found").innerHTML = "Nieznaleziono takiego kontaktu!";
+        }
+        
+
+        
     }
   
     
     render(){
+        if(this.state.redirect === true){
+            return <Redirect to="/" />
+        }
         return(
                 <div>
                     
-                    <p>Wyszukaj kontakt po nazwisku: </p><br />
-                    <input type="text" name="nazwisko" />
-                    <button>Znajdz</button>
-                    
-                    
-                    {this.state.dane != null ? this.state.dane.map((value, key) =>
-                
-                <tr>
-                    
-                   
-                    <td>{value.nazwisko}</td>
-                    
-                    
-                </tr>
-            
-            ) : <p>blad</p>}
-                    
 
+
+                    <p>Podaj nazwisko: </p>
+                    <input type="text" name="nazwisko" />
+                    <button onClick={this.searchContact}>Znajdź!</button>
+                    <p id="found"></p>
+                   
+                    
+                    
+                    
+                    
+                    
+            
+            
                     
 
                 </div>

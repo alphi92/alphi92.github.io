@@ -4,7 +4,6 @@ import AddContacts from "./components/AddContacts"
 import ListContacts from "./components/ListContacts"
 import DelContacts from "./components/DelContacts"
 import EditContacts from "./components/EditContacts"
-import home from "./components/home"
 import Search from "./components/Search"
 import  "./App.css"
 
@@ -21,9 +20,7 @@ class App extends Component{
         <BrowserRouter>
 
           <ul>
-            <li>
-              <Link to="/home">Strona glowna</Link>
-            </li>
+            
             <li>
               <Link to="/">Lista kontaktów</Link>
             </li>
@@ -40,7 +37,6 @@ class App extends Component{
             <Route path="/add" component={AddContacts} />
             <Route path="/del/:id" component={DelContacts} />
             <Route path="/edit/:id" component={EditContacts} />
-            <Route path="/home" component={home} />
             <Route path="/search" component={Search} />
           </Switch>
           
