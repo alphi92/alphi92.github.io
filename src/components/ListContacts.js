@@ -19,7 +19,7 @@ class ListContacts extends Component{
             <div className="wyswietlanie">
                 <table>
                 <tr>
-                    <th scope="col">#</th>
+                    <th scope="col"> </th>
                     <th scope="col">Imię</th>
                     <th scope="col">Nazwisko</th>
                     <th scope="col">Email</th>

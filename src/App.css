@@ -9,9 +9,14 @@ body {
   width:100%;
   height:100%;
   text-align:center;
-  background-color:#d0eff3;
+  background-color: #b3ffcc;
   background-position:50% 0;
   background-repeat:no-repeat;
+
+}
+img{
+  width:auto;
+  height:250px;
 }
 
 .stronaGlowna h1, ul{
@@ -20,12 +25,11 @@ body {
   justify-content: space-around;
   align-items: center;
   min-height: 10vh;
-  background-color: rgb(181, 184, 216);
-  color:white;
+  color:black;
 }
 
 .wyswietlanie a{
-  background-color: rgb(138, 143, 202);
+  background-color: #65c786;
   font-size: 12px;
   padding: 6px 12px;
   border-radius: 12px;
@@ -35,28 +39,20 @@ body {
   width: 100%;
   height: 50%;
   border-spacing: 50px;
-  background-color: rgb(181, 184, 216);
+  
 }
 
-
-.domowaStrona p{
-  text-align: center;
-}
-.domowaStrona img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-.dodaj{
-  background-color: rgb(181, 184, 216);
-}
 
 .dodaj input{
   width:10%;
   border: 2px solid red;
   border-radius: 4px;
-  }
+}
+.search input{
+    width:10%;
+    border: 2px solid red;
+    border-radius: 4px;
+}
 
 .dodaj p{
   margin-left: auto;
@@ -79,4 +75,19 @@ table tr td:first-child::before {
   min-width: 1em;
   margin-right: 0.5em;
 }
-
+.topnav {
+  background-color: rgba(0,0,0,0.5);
+  overflow: hidden;
+}
+.topnav a {
+  float: center;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}

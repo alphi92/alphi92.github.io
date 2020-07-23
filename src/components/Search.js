@@ -41,7 +41,7 @@ class Search extends Component{
             return <Redirect to="/" />
         }
         return(
-                <div>
+                <div className="search">
                     
 
 

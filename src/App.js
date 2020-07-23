@@ -5,6 +5,8 @@ import ListContacts from "./components/ListContacts"
 import DelContacts from "./components/DelContacts"
 import EditContacts from "./components/EditContacts"
 import Search from "./components/Search"
+import phonebook from "./phonebook.jpg"
+
 import  "./App.css"
 
 class App extends Component{
@@ -16,21 +18,19 @@ class App extends Component{
       <div className="stronaGlowna">
         
           <h1>Książka Telefoniczna</h1>
+          <img src={phonebook} alt="phonebook" />
         
         <BrowserRouter>
 
-          <ul>
+          
             
-            <li>
+        <div class="topnav">
               <Link to="/">Lista kontaktów</Link>
-            </li>
-            <li>
+            
               <Link to="/add">Dodaj nowy kontakt</Link>
-            </li>
-            <li>
+            
               <Link to="/search">Wyszukaj kontakt</Link>
-            </li>
-          </ul>
+         </div>   
         
           <Switch>
             <Route exact path="/" component={ListContacts} />
