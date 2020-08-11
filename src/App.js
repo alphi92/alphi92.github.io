@@ -5,7 +5,8 @@ import ListContacts from "./components/ListContacts"
 import DelContacts from "./components/DelContacts"
 import EditContacts from "./components/EditContacts"
 import Search from "./components/Search"
-import phonebook from "./phonebook.jpg"
+
+
 
 import  "./App.css"
 
@@ -17,8 +18,13 @@ class App extends Component{
 
       <div className="stronaGlowna">
         
-          <h1>Książka Telefoniczna</h1>
-          <img src={phonebook} alt="phonebook" />
+          <h1>Książka Telefoniczna</h1> 
+          
+          <div class="box4"></div>
+          <div class="box5"></div>
+          <div class="box6"></div>
+         
+          
         
         <BrowserRouter>
 

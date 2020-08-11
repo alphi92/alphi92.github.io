@@ -28,7 +28,7 @@ class Search extends Component{
             document.getElementById("found").innerHTML = "Znaleziono!";
         }
         else{
-            document.getElementById("found").innerHTML = "Nieznaleziono takiego kontaktu!";
+            document.getElementById("found").innerHTML = "Nie znaleziono takiego kontaktu!";
         }
         
 
@@ -48,7 +48,7 @@ class Search extends Component{
                     <p>Podaj nazwisko: </p>
                     <input type="text" name="nazwisko" />
                     <button onClick={this.searchContact}>Znajdź!</button>
-                    <p id="found"></p>
+                    <div class = "box"><p id="found"></p></div>
                    
                     
                     

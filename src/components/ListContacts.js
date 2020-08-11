@@ -35,8 +35,8 @@ class ListContacts extends Component{
                     <td>{value.nazwisko}</td>
                     <td>{value.email}</td>
                     <td>{value.telefon}</td>
-                    <td><Link to={`/del/${key}`}>Usuń kontakt</Link></td>
-                    <td><Link to={`/edit/${key}`}>Edytuj kontakt</Link></td>
+                    <td><Link to={`/del/${key}`}><button class="button1">Usuń kontakt</button></Link></td>
+                    <td><Link to={`/edit/${key}`}><button class="button2">Edytuj kontakt</button></Link></td>
                 </tr>
             
             ) : <tr><td colspan="4">Brak danych</td></tr>}

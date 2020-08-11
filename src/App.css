@@ -1,3 +1,32 @@
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes appear2 {
+  0% {
+    opacity: 0;
+    transform: translateY(500px);
+    border-radius: 100px;
+  }
+  30%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+  80%{
+    transform: rotate(180deg);
+    border-radius: 0;
+  }
+  100%{
+    transform: rotate(270deg);
+    border-radius: 0;
+  }
+}
+
 .App {
   text-align: center;
   
@@ -14,10 +43,37 @@ body {
   background-repeat:no-repeat;
 
 }
-img{
-  width:auto;
-  height:250px;
+.box4{
+ 
+  width:90px;
+  height:90px;
+  background-color: rgb(19, 30, 129);
+  display: inline-block;
+  margin-bottom: 50px;
+  animation: appear2 3s 0.5s forwards;
+  margin-right: 10px;
 }
+.box5{
+  
+  width:90px;
+  height:90px;
+  background-color: rgb(242, 247, 243);
+  display: inline-block;
+  margin-bottom: 50px;
+  animation: appear2 3s 0.5s forwards;
+  margin-right: 10px;
+  
+}
+.box6{
+  
+  width:90px;
+  height:90px;
+  background-color: rgb(214, 37, 52);
+  display: inline-block;
+  margin-bottom: 50px;
+  animation: appear2 3s 0.5s forwards;
+}
+
 
 .stronaGlowna h1, ul{
   height: 200px;
@@ -28,11 +84,26 @@ img{
   color:black;
 }
 
-.wyswietlanie a{
-  background-color: #65c786;
-  font-size: 12px;
-  padding: 6px 12px;
-  border-radius: 12px;
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #c91313;
+}
+
+.button1:hover {
+  background-color: #c91313;
+  color: white;
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
 }
 
 .wyswietlanie table{
@@ -90,4 +161,19 @@ table tr td:first-child::before {
 .topnav a:hover {
   background-color: #ddd;
   color: black;
+}
+
+.box {
+  width:150px;
+  height:auto;
+  background-color: #1a5a2f;
+  animation-name: appear;
+  animation-duration: 5s;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  animation-fill-mode: both;
+  animation-direction: reverse;
+  animation-iteration-count: infinite;
+  
 }
